@@ -110,6 +110,7 @@ public class sessionService {
 		                    
 		                    if(total + talkTime <= maxSessionTimeLimit) {
 		                        talk.setScheduled(true);
+					session.add(talk);
 		                        scheduledTalkList.add(talk);
 		                        total = total + talkTime;
 		                    }
